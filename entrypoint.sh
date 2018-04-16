@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ -z "$LOGIN" ] || [ -z "$PASSWORD" ]; then
-			echo >&2 'Please specify LOGIN and PASSWORD variables `--env PROXY_LOGIN=login --env PROXY_PASSWORD=pasword`'
+			echo >&2 'Please specify LOGIN and PASSWORD variables `--env LOGIN=login --env PASSWORD=pasword`'
 			exit 1
 fi
 
