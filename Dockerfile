@@ -21,4 +21,5 @@ COPY ./entrypoint.sh .
 RUN chmod +x ./entrypoint.sh
 STOPSIGNAL SIGTERM
 EXPOSE 3128/tcp
+HEALTHCHECK --interval=30s --timeout=10s --start-period=2s --retries=2 CMD [ "nc", "-z", "-w5", "localhost", "3128" ]
 ENTRYPOINT ["./entrypoint.sh"]
