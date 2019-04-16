@@ -1,7 +1,7 @@
 FROM alpine:latest as builder
 
-ARG VERSION=0.8.11
-ARG SHA=ba2f3f99c32ef310b96c2ad04dd980bf0245bcae
+ARG VERSION=0.8.12
+ARG SHA=e7e2f2656247004a726c07142deca7d91dd8e94e
 
 RUN apk add --update alpine-sdk wget bash unzip
 RUN DIR=$(mktemp -d) && cd ${DIR} && \
